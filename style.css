@@ -1,0 +1,140 @@
+:root{
+  --backgroundBlue: #2A3356;
+  --orange: #F35B25;
+  --white: #FDFCFC;
+  --offwhite: #E8E2E2;
+  --transWhite: rgba(253, 252, 252, .25);
+}
+body{
+  font-family: sans;
+  background: var(--backgroundBlue);
+  color: var(--white);
+  text-align: center;
+  font-family: 'Advent Pro', sans-serif;
+}
+.cont{
+/*   background: #000; */
+  width: 302px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 302px;
+}
+tr {
+    height: 100px;
+    border-bottom: 1px var(--transWhite) solid;
+}
+tr:last-child{
+  border-bottom: 0;
+}
+.winner, td {
+  font-family: 'Handlee', cursive;
+  text-transform: uppercase;
+}
+
+td {
+  font-size: 3rem;
+  width:100px;
+  padding:0;
+  border-right: 1px var(--transWhite) solid;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td:last-child {
+  border-right: 1px rgba(0,0,0,0) solid;
+}
+
+td:hover,
+.reset:hover{
+  cursor: pointer;
+}
+td.full:hover{
+  cursor: default;
+}
+
+.x, .btn-x {
+  color: var(--orange) !important;
+}
+
+.o, .btn-o{
+  color: var(--offwhite);
+}
+
+.reset{
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translate(-50%,0%);
+}
+
+.whoWon{
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  transform: translate(-55%,0%);
+}
+
+.winText{
+  position: relative;
+  bottom: .1rem;
+  left: .3rem;
+  font-size: 1.2rem;
+}
+
+.winner{
+  font-size: 1.5rem;
+}
+
+.animated {
+  transition: opacity 1s;
+}
+.animated-med {
+  transition: opacity .75s;
+}
+.animated-fast {
+  transition: opacity .5s;
+}
+.hideAll {
+  opacity: 0;
+}
+.showAll {
+  opacity: 1;
+}
+.credit {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%,0);
+  letter-spacing: 1px;
+}
+
+.selectToken{
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.label{
+  position:relative;
+  bottom: .3rem;
+}
+.selectToken .btn{
+  font-size: 2rem;
+  font-family: 'Handlee', cursive;
+
+  display: inline-block;
+  padding: .5rem;
+}
+.selectToken .btn:hover{
+  cursor: pointer;
+}
