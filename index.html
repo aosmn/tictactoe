@@ -7,6 +7,33 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
-
+    <div class="cont">
+      <div class="selectToken animated-med showAll">
+        <span class="label">Play with:</span>
+        <div class="btn btn-x" data-token="x">X</div>
+        <div class="btn btn-o" data-token="o">O</div>
+      </div>
+      <div class="animated-fast whoWon hideAll"><span class="winner"></span><span class="winText"></span></div>
+      <table class="animated showAll">
+        <tr class="row0">
+          <td class="cell col0" id="00" data-i=0 data-j=0></td>
+          <td class="cell col1" id="01" data-i=0 data-j=1></td>
+          <td class="cell col2" id="02" data-i=0 data-j=2></td>
+        </tr>
+        <tr class="row1">
+          <td class="cell col0" id="10" data-i=1 data-j=0></td>
+          <td class="cell col1" id="11" data-i=1 data-j=1></td>
+          <td class="cell col2" id="12" data-i=1 data-j=2></td>
+        </tr>
+        <tr class="row2">
+          <td class="cell col0" id="20" data-i=2 data-j=0></td>
+          <td class="cell col1" id="21" data-i=2 data-j=1></td>
+          <td class="cell col2" id="22" data-i=2 data-j=2></td>
+        </tr>
+      </table>
+      <div class="reset animated" hidden>reset</div>
+    </div>
+    <div class="credit">by aosmn &copy; 2018</div>
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:300|Handlee" rel="stylesheet">
   </body>
 </html>
