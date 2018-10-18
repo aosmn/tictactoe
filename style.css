@@ -1,8 +1,8 @@
 :root{
   --backgroundBlue: #2A3356;
   --orange: #F35B25;
-  --white: #FDFCFC;
-  --offwhite: #E8E2E2;
+  --white: #FFFFFF;
+  /* --offwhite: #E8E2E2; */
   --transWhite: rgba(253, 252, 252, .25);
 }
 body{
@@ -66,11 +66,12 @@ td.full:hover{
 }
 
 .o, .btn-o{
-  color: var(--offwhite);
+  color: var(--white);
 }
 
 .reset{
   text-transform: uppercase;
+  font-size: 1.3rem;
   position: absolute;
   left: 50%;
   top: 110%;
@@ -88,7 +89,7 @@ td.full:hover{
   position: relative;
   bottom: .1rem;
   left: .3rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .winner{
@@ -128,6 +129,7 @@ td.full:hover{
 .label{
   position:relative;
   bottom: .3rem;
+  font-size: 1.3rem
 }
 .selectToken .btn{
   font-size: 2rem;
