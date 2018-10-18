@@ -33,8 +33,11 @@ $(document).ready(function(){
         $(".winner").html(gameState).addClass(gameState);
         $(".whoWon").addClass("showAll").removeClass("hideAll");
         $(".reset").addClass("hideAll").removeClass("showAll");
-
         setTimeout(function(){
+          $(".reset").hide();
+        },1000);
+        setTimeout(function(){
+          $(".reset").hide();
           $("table").addClass("hideAll").removeClass("showAll");
         },2000);
         setTimeout(function(){
@@ -53,6 +56,9 @@ $(document).ready(function(){
           $(".whoWon").addClass("showAll").removeClass("hideAll");
           $(".reset").addClass("hideAll").removeClass("showAll");
 
+          setTimeout(function(){
+            $(".reset").hide();
+          },1000);
           setTimeout(function(){
             $("table").addClass("hideAll").removeClass("showAll");
           },2000);
