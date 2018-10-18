@@ -36,7 +36,7 @@ tr:last-child{
   border-bottom: 0;
 }
 .winner, td {
-  font-family: 'Handlee', cursive;
+  font-family: 'Handlee', sans;
   text-transform: uppercase;
 }
 
@@ -123,6 +123,7 @@ td.full:hover{
   top: -25%;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 .label{
   position:relative;
@@ -130,7 +131,7 @@ td.full:hover{
 }
 .selectToken .btn{
   font-size: 2rem;
-  font-family: 'Handlee', cursive;
+  font-family: 'Handlee', sans;
 
   display: inline-block;
   padding: .5rem;

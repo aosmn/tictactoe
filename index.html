@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./lodash.min.js"></script>
-    <script src="./scripts.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <meta name="theme-color" content="#F35B25"/>
     <title>Tic Tac Toe</title>
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./scripts/lodash.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div class="cont">
@@ -37,5 +40,13 @@
     </div>
     <div class="credit">by aosmn &copy; 2018</div>
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:300|Handlee" rel="stylesheet">
+
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('/sw.js')
+                 .then(function() { console.log("Service Worker Registered"); });
+      }
+    </script>
   </body>
 </html>
